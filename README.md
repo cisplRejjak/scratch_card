@@ -1,6 +1,8 @@
 # Scratch Card Plugin
 
-![Plugin Demo](demo.png)
+<div align="center">
+  <img width="418" alt="demo" src="https://github.com/cisplRejjak/scratch_card/assets/55873481/cd2df5c2-de2d-492e-88ff-deb03fd5c2e5">
+</div>
 
 ## Overview
 
