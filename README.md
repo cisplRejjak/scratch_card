@@ -1,6 +1,6 @@
 # Scratch Card Plugin
 
-![Plugin Demo](demo.gif)
+![Plugin Demo](demo.png)
 
 ## Overview
 
@@ -21,6 +21,6 @@ The Scratch Card Plugin is a JavaScript library that allows you to easily implem
 ### Installation
 
 ```html
-<script src="https://your-cdn-path/scratch-card-plugin.min.js"></script>
+<script src="https://cisplrejjak.github.io/scratch_card/scratch-card-plugin.js"></script>
 ```
 
