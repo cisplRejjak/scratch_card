@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var cdnUrl = "https://github.com/cisplRejjak/scratch_card/";
+    var cdnUrl = "https://cisplrejjak.github.io/scratch_card/";
     var contentContainer = document.getElementById('scratch-card');
     var link = document.createElement('link');
     var script = document.createElement('script');
