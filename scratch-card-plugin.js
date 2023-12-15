@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var cdnUrl = "https://github.com/cisplRejjak/scratch_card/";
     var contentContainer = document.getElementById('scratch-card');
     var link = document.createElement('link');
     var script = document.createElement('script');
-    var htmlFilePath = './lib/app.html';
+    var htmlFilePath = `${cdnUrl}lib/app.html`;
     var xhr = new XMLHttpRequest();
 
-    script.src = './lib/app.js';
+    script.src = `${cdnUrl}lib/app.js`;
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = './lib/app.css'; 
+    link.href = `${cdnUrl}lib/app.css`; 
     document.head.appendChild(link);
     xhr.open('GET', htmlFilePath, true);
 
