@@ -1,0 +1,244 @@
+.lib-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  row-gap: 1em;
+}
+.lib-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100vh;
+}
+
+.lib-container {
+  display: flex;
+}
+
+.lib-grid-item {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ccc; */
+  border-radius: 5px;
+  padding: 20px;
+  border: 4px solid #FAC18E;
+  background-image: url('./images/BG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.lib-scratch-card {
+  position: relative;
+  border: 4px solid #FAC18E;
+  border-radius: 4px;
+  /* padding: 12px; */
+  width: 320px;
+  background-color: #fff;
+}
+.lib-scratch-card-cover-container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  filter: url('#remove-black');
+  transition: opacity 0.4s;
+}
+.lib-scratch-card-cover-container.clear {
+  opacity: 0;
+}
+.lib-scratch-card-cover-container.hidden {
+  display: none;
+}
+.lib-scratch-card-canvas {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+.lib-scratch-card-canvas.hidden {
+  opacity: 0;
+}
+.lib-scratch-card-canvas:active {
+  cursor: grabbing;
+}
+.lib-scratch-card-canvas-render {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+.lib-scratch-card-canvas-render.hidden {
+  display: none;
+}
+.lib-scratch-card-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cfced6;
+  overflow: hidden;
+}
+
+.lib-scratch-card-cover.shine::before {
+  animation: shine 8s infinite;
+}
+@keyframes shine {
+  50% {
+    background-position: 0% 0%;
+ }
+  100% {
+    background-position: -50% -50%;
+ }
+}
+.lib-scratch-card-cover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  filter: url('#noise');
+}
+
+.lib-number-wraper{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ABA5A5;
+  border: 2px solid #FAC18E;
+  border-radius: 4px;
+}
+
+.lib-star-wraper{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.lib-number-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  height: 30vh;
+  background-image: url('./images/InnerBG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.lib-star-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  height: 30vh;
+  padding: 20px;
+  background-color: #5b554f;
+}
+
+.lib-grid-inner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+}
+
+.lib-star_img{
+  background-image: url('./images/scratch-star.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50px;
+  width: 50px;
+}
+
+.lib-row{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lib-row-bottom{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.lib-header-first-item{
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.lib-header-font{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  user-select: none;
+}
+
+.lib-header-font-small{
+  font-size: 15px;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  user-select: none;
+}
+
+.lib-black-color{
+  color: #111;
+  user-select: none;
+}
+
+.lib-margin-left-8{
+  margin-left: 8px;
+}
+
+.lib-star-size{
+  font-size: 12px;
+  user-select: none;
+}
+
+.lib-prize-text{
+  user-select: none;
+}
+
+.lib-tutorial{
+    height: 80px;
+    width: 100px;
+    background-image: url('./images/scratch-card.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -50px;
+    float: right;
+    margin-right: -10px;
+}

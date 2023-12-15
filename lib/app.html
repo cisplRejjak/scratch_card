@@ -1,0 +1,102 @@
+<div class="lib-body">
+    <div class="lib-container">
+        <div class="lib-grid-item">
+            <div class="lib-row">
+                <div class="lib-header-first-item">
+                    <label class="lib-header-font lib-black-color">Scratch</label>
+                </div>
+                <label class="lib-header-font lib-margin-left-8">&</label>
+                <label class="lib-header-font lib-margin-left-8">Win</label>
+            </div>
+            <div class="lib-row">
+                <label class="lib-header-font-small">Match 3 <span class="lib-star-size">&#9733;</span> to win</label>
+            </div>
+            <div class="lib-scratch-card">
+                <div class="lib-scratch-card-cover-container">
+                    <canvas class="lib-scratch-card-canvas" width="320" height="320"></canvas>
+                    <img class="lib-scratch-card-canvas-render hidden" alt="">
+                    <div class="lib-scratch-card-cover shine">
+                        <div class="lib-star-wraper">
+                            <div class="lib-star-container">
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div> 
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div> 
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>  
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div> 
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>
+                                <div class="lib-grid-inner-item">
+                                    <div class="lib-star_img"></div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-number-container">
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div> 
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div> 
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>  
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div> 
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>
+                    <div class="lib-grid-inner-item">
+                        <strong class="lib-prize-text">10</strong>
+                    </div>     
+                </div>
+            </div>
+            <div class="lib-row-bottom">
+                <label class="lib-header-font-small">3 x <span class="lib-star-size">&#9733;</span> = Prize</label>
+            </div>
+
+            <div class="lib-tutorial"></div>
+            
+            <svg width="0" height="0">
+                <filter id="remove-black" color-interpolation-filters="sRGB">
+                    <feColorMatrix type="matrix" values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        -1 -1 -1 0 1" result="black-pixels" />
+                    <feComposite in="SourceGraphic" in2="black-pixels" operator="out" />
+                </filter>
+                <filter id="noise">
+                    <feTurbulence baseFrequency="0.5"></feTurbulence>
+                </filter>
+            </svg>
+        </div>
+    </div>
+</div>
